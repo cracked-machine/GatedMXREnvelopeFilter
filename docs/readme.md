@@ -17,3 +17,4 @@ A tremolo effect is added to gate the envelope filter. Unlike the original UHF c
   <li><a href="GatedEnvelopeFilter-brdBack.pdf">Board Layout (Back)</a></li>
 </ul>
   
+<a href="https://cracked-machine.github.io/GatedMXREnvelopeFilter/">Github Pages</a>
