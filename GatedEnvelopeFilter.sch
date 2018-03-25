@@ -118,23 +118,23 @@ $EndComp
 $Comp
 L C C5
 U 1 1 5A2AF632
-P 8725 2375
-F 0 "C5" V 8500 2225 50  0000 L CNB
-F 1 "100nF" V 8575 2225 50  0000 L CNB
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8763 2225 50  0001 C CNN
-F 3 "" H 8725 2375 50  0001 C CNN
-	1    8725 2375
+P 9100 2375
+F 0 "C5" V 8875 2225 50  0000 L CNB
+F 1 "100nF" V 8950 2225 50  0000 L CNB
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9138 2225 50  0001 C CNN
+F 3 "" H 9100 2375 50  0001 C CNN
+	1    9100 2375
 	0    1    1    0   
 $EndComp
 $Comp
 L R R6
 U 1 1 5A2AF789
-P 9100 2375
-F 0 "R6" V 9180 2375 50  0000 C CNN
-F 1 "3K3" V 9100 2375 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9030 2375 50  0001 C CNN
-F 3 "" H 9100 2375 50  0001 C CNN
-	1    9100 2375
+P 9425 2375
+F 0 "R6" V 9505 2375 50  0000 C CNN
+F 1 "3K3" V 9425 2375 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9355 2375 50  0001 C CNN
+F 3 "" H 9425 2375 50  0001 C CNN
+	1    9425 2375
 	0    1    1    0   
 $EndComp
 $Comp
@@ -186,12 +186,12 @@ AGND
 $Comp
 L SW_3PDT_on_on SW_ON_1
 U 1 1 5A2FB6A1
-P 9575 2275
-F 0 "SW_ON_1" H 9575 2445 50  0000 C CNN
-F 1 "SW_3PDT_on_on" H 9575 2075 50  0001 C CNN
-F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM_SolderLugs" H 9575 2275 50  0001 C CNN
-F 3 "" H 9575 2275 50  0001 C CNN
-	1    9575 2275
+P 9800 2275
+F 0 "SW_ON_1" H 9800 2445 50  0000 C CNN
+F 1 "SW_3PDT_on_on" H 9800 2075 50  0001 C CNN
+F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM_SolderLugs" H 9800 2275 50  0001 C CNN
+F 3 "" H 9800 2275 50  0001 C CNN
+	1    9800 2275
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -330,7 +330,7 @@ F 3 "" H 6050 2100 50  0001 C CNN
 $EndComp
 Text Notes 3125 1575 0    60   ~ 0
 | ----------------------- 3 Stage State Variant Filter (SVF) ---------------------------|
-Text Notes 9025 1250 3    60   ~ 0
+Text Notes 9450 1150 3    60   ~ 0
 Low Pass Output
 $Comp
 L 4066BMS U2
@@ -659,13 +659,13 @@ NoConn ~ 2150 5950
 NoConn ~ 4050 5950
 Text Label 1725 2275 2    60   ~ 0
 SIG_IN
-Text Label 9800 2275 0    60   ~ 0
+Text Label 10025 2275 1    60   ~ 0
 SIG_OUT
 Text Label 6250 1050 0    60   ~ 0
 BYPASS
 Text Label 2275 2375 3    60   ~ 0
 FX_IN
-Text Label 9325 2375 3    60   ~ 0
+Text Label 9550 2375 3    60   ~ 0
 FX_OUT
 NoConn ~ 1950 5950
 NoConn ~ 2050 5950
@@ -866,13 +866,13 @@ Wire Wire Line
 Wire Wire Line
 	2300 1050 2300 2175
 Wire Wire Line
-	9125 1050 2300 1050
+	9500 1050 2300 1050
 Wire Wire Line
-	9125 2175 9125 1050
+	9500 2175 9500 1050
 Wire Wire Line
-	9375 2175 9125 2175
+	9600 2175 9500 2175
 Wire Wire Line
-	10175 2275 9775 2275
+	10175 2275 10000 2275
 Wire Wire Line
 	2175 2375 2475 2375
 Wire Wire Line
@@ -894,11 +894,11 @@ Wire Wire Line
 Connection ~ 4550 2375
 Connection ~ 8525 2375
 Wire Wire Line
-	9250 2375 9375 2375
+	9575 2375 9600 2375
 Wire Wire Line
-	8875 2375 8950 2375
+	9250 2375 9275 2375
 Wire Wire Line
-	8475 2375 8575 2375
+	8475 2375 8675 2375
 Wire Wire Line
 	8525 1225 8525 2375
 Wire Wire Line
@@ -985,4 +985,27 @@ Wire Wire Line
 	825  3450 825  3750
 Wire Wire Line
 	825  3750 900  3750
+$Comp
+L NPOT LEVEL1
+U 1 1 5AB856C1
+P 8675 2625
+F 0 "LEVEL1" V 8500 2625 50  0000 C CNN
+F 1 "100K" V 8575 2625 50  0000 C CNN
+F 2 "" H 8675 2625 50  0001 C CNN
+F 3 "" H 8675 2625 50  0001 C CNN
+	1    8675 2625
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8675 2375 8675 2475
+Wire Wire Line
+	8825 2625 8900 2625
+Wire Wire Line
+	8900 2625 8900 2375
+Wire Wire Line
+	8900 2375 8950 2375
+Wire Wire Line
+	8675 2775 8675 2950
+Text Label 8675 2950 0    60   ~ 0
+GND
 $EndSCHEMATC
